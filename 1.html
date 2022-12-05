@@ -1,0 +1,22 @@
+<html>
+<head>
+<script language="javaScript">
+function quiz(){
+answer=prompt("表示されている写真の都道府県はどこですか？\n※漢字+都/道/府/県でお答えください。");
+if(answer=="北海道"){
+alert("正解です。県庁所在地は、「札幌市中央区」です。");
+}
+else{
+alert("不正解です。");
+}
+}
+</script>
+<title>第一問</title>
+</head>
+<body>
+<font size="7">都道府県クイズ(第1問)</font>
+<br>クイズを開始するには下のクイズ開始ボタンを押してください。</br>
+<img src="hokkaido.png" width="400" height="271">
+<form><input type="button" name="ボタン" value="クイズ開始" onclick="quiz()"></form><button onclick="location.href=''">次の問題へ</button>
+</body>
+</html>
