@@ -2,8 +2,7 @@
 <head>
 <title>都道府県クイズ</title>
 <script type="text/javascript">
-<!--
-var mylink = new Array(
+myTable = new Array(
 	"1.html",
 	"2.html",
 	"3.html",
@@ -50,14 +49,13 @@ var mylink = new Array(
 	"44.html",
 	"45.html",
 	"46.html",
-	"47.html",
-	
+	"47.html"
 );
-function random_jump() {
-	var i = Math.floor(Math.random() * mylink.length);
-	location.href = mylink[i];
+
+function myRndLink(){
+  myRnd = Math.floor( Math.random() * myTable.length );
+  location.href = myTable[myRnd];
 }
-// -->
 </script>
 </head>
 <body>
@@ -65,6 +63,6 @@ function random_jump() {
 <br>とある先生のリクエストで制作した都道府県クイズです。47都道府県から出題します。</br>
 使用したプログラミング言語は、html(土台)・Javascript(クイズのシステム)・CSS(装飾)です。
 <br>クイズを開始するには、下の「スタート」ボタンを押してください。</br>
-<button onclick="location.href='javascript:random_jump();'">スタート</button></center>
+<input type="button" value="スタート"onclick="myRndLink()"></center>
 </body>
 </html>
